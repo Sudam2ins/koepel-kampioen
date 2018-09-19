@@ -996,6 +996,8 @@ nav .breadcrumb {
       letter-spacing: 2px; }
   .footer .footer-content .fc-link .main-link ul {
     margin-bottom: 0; }
+    .footer .footer-content .fc-link .main-link ul li {
+      margin: 5px 0; }
 
 .bottom-footer {
   padding: 12px 0; }
