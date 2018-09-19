@@ -451,8 +451,7 @@ label {
   color: #838383; }
 
 .form-control:focus {
-  box-shadow: none;
-  border: 1px solid #ffffff !important; }
+  box-shadow: none; }
 
 .action-btn {
   font-size: 18px;
@@ -475,6 +474,9 @@ label {
   margin: 0;
   font-weight: 700;
   color: #ff3f00; }
+  @media (max-width: 360px) {
+    .sec-title h2 {
+      font-size: 26px !important; } }
 
 .sub-title h3 {
   margin: 0;
@@ -494,7 +496,7 @@ label {
   padding: 70px 0; }
   @media (max-width: 992px) {
     .section {
-      padding: 40px 0; } }
+      padding: 45px 0; } }
 
 .seperator {
   width: 100%;
@@ -632,7 +634,7 @@ label {
   .toggle {
     display: none !important; } }
 .banner {
-  height: 70vh;
+  height: 80vh;
   background-position: bottom center;
   position: relative; }
   .banner .banner-content {
@@ -645,6 +647,9 @@ label {
     .banner .banner-content .bc-title {
       max-width: 900px;
       margin-bottom: 10px; }
+      @media (max-width: 1400px) {
+        .banner .banner-content .bc-title {
+          max-width: 685px; } }
       @media (max-width: 1024px) {
         .banner .banner-content .bc-title {
           max-width: 780px; } }
@@ -653,12 +658,18 @@ label {
         font-size: 80px;
         font-weight: 700;
         color: #ffffff; }
+        @media (max-width: 1400px) {
+          .banner .banner-content .bc-title h1 {
+            font-size: 60px; } }
         @media (max-width: 1024px) {
           .banner .banner-content .bc-title h1 {
             font-size: 60px; } }
         @media (max-width: 767px) {
           .banner .banner-content .bc-title h1 {
             font-size: 32px; } }
+        @media (max-width: 360px) {
+          .banner .banner-content .bc-title h1 {
+            font-size: 26px; } }
         .banner .banner-content .bc-title h1 span {
           color: #ff3f00; }
 
@@ -718,14 +729,31 @@ label {
       .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing {
         padding-right: 20px;
         display: table-cell; } }
+    @media (max-width: 360px) {
+      .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing {
+        display: block;
+        padding-bottom: 20px; } }
     .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing .il-img {
+      max-width: 60px;
+      display: inline-block;
       background-color: #ff3f00;
-      padding: 15px 10px;
-      margin-right: 15px; }
+      margin-right: 15px;
+      vertical-align: middle;
+      padding: 12px; }
+      .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing .il-img img {
+        display: table;
+        margin: 0 auto; }
+      @media (max-width: 767px) {
+        .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing .il-img {
+          padding: 10px;
+          margin-right: 5px;
+          max-width: 40px; } }
     .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing .il-text {
       font-size: 18px;
       color: #ff3f00;
-      font-weight: 700; }
+      font-weight: 700;
+      display: inline-block;
+      vertical-align: middle; }
       @media (max-width: 767px) {
         .text-left-icon-right .tlir-content .tlirc-text-left .tlirctl-icon-list .icon-listing .il-text {
           font-size: 16px; } }
@@ -746,6 +774,13 @@ label {
         display: none; } }
 .text-left-icon-right .tlir-content .tlirc-icon-left {
   margin-top: 88px; }
+  @media (max-width: 767px) {
+    .text-left-icon-right .tlir-content .tlirc-icon-left .tlirccl-image {
+      display: table;
+      margin: 0 auto; } }
+  @media (max-width: 767px) {
+    .text-left-icon-right .tlir-content .tlirc-icon-left {
+      margin-top: 30px; } }
 
 nav .breadcrumb {
   background-color: transparent;
@@ -803,9 +838,15 @@ nav .breadcrumb {
             font-size: 24px;
             color: #ffffff;
             text-align: center; }
+            @media (max-width: 360px) {
+              .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-title h2 .title-bg {
+                font-size: 20px; } }
           .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-title h2 .title-normal {
             font-size: 30px;
             color: #ff3f00; }
+            @media (max-width: 360px) {
+              .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-title h2 .title-normal {
+                font-size: 28px; } }
       .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-price {
         height: 50px; }
         .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-price h2 {
@@ -813,6 +854,9 @@ nav .breadcrumb {
           font-size: 40px;
           font-weight: 700;
           color: #ff3f00; }
+          @media (max-width: 360px) {
+            .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-price h2 {
+              font-size: 30px; } }
           .product-listing .pl-content .plc-listing .plcl-title-price .plcltp-price h2 span {
             font-size: 19px;
             display: block; }
